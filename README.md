@@ -3,3 +3,41 @@ By using this program, you can create a text-based tree structure similar to a f
 ```shell
 node app.js path='input.json'
 ```
+
+## Sample Input
+
+```json
+{
+  "ocserv": {
+    "Dockerfile": null,
+    "entrypoint.sh": null,
+    "ocserv.conf": null,
+    "ocserv-install.sh": null,
+    "README.md": null
+  },
+  "snap": {
+    "lxd": {
+      "22923": null,
+      "24322": null,
+      "common": null,
+      "current": null
+    }
+  }
+}
+```
+
+## Sample Output
+```text
+├── ocserv
+    ├── Dockerfile
+    ├── entrypoint.sh
+    ├── ocserv.conf
+    ├── ocserv-install.sh
+    └── README.md
+└── snap
+    └── lxd
+        ├── 22923
+        ├── 24322
+        ├── common
+        └── current
+```
